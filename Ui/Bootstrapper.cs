@@ -20,6 +20,7 @@ using _1RM.View.Settings.Launcher;
 using _1RM.View.Settings.ProtocolConfig;
 using _1RM.View.Settings.Theme;
 using _1RM.View.Utils;
+using _1RM.View.Workbench;
 using Shawn.Utils;
 using Shawn.Utils.Interface;
 using Shawn.Utils.Wpf;
@@ -60,6 +61,8 @@ namespace _1RM
 
             builder.Bind<MainWindowView>().ToSelf().InSingletonScope();
             builder.Bind<MainWindowViewModel>().ToSelf().InSingletonScope();
+            builder.Bind<WorkbenchView>().ToSelf().InSingletonScope();
+            builder.Bind<WorkbenchViewModel>().ToSelf().InSingletonScope();
             builder.Bind<LauncherWindowView>().ToSelf().InSingletonScope();
             builder.Bind<LauncherWindowViewModel>().ToSelf().InSingletonScope();
             builder.Bind<ServerSelectionsViewModel>().ToSelf().InSingletonScope();

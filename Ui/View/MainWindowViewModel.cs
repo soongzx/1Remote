@@ -10,6 +10,7 @@ using _1RM.View.ServerView;
 using _1RM.View.Settings;
 using _1RM.View.Settings.General;
 using _1RM.View.Utils;
+using _1RM.View.Workbench;
 using Shawn.Utils;
 using Shawn.Utils.Wpf;
 using Stylet;
@@ -50,6 +51,7 @@ namespace _1RM.View
         //public ServerTreeViewModel ServerTreeViewModel { get; } = IoC.Get<ServerTreeViewModel>();
         public SettingsPageViewModel SettingViewModel { get; } = IoC.Get<SettingsPageViewModel>();
         public AboutPageViewModel AboutViewModel { get; } = IoC.Get<AboutPageViewModel>();
+        public WorkbenchViewModel WorkbenchViewModel { get; } = IoC.Get<WorkbenchViewModel>();
         private readonly GlobalData _appData;
 
 
